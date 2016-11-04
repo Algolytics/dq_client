@@ -17,7 +17,7 @@ class Response:
         return self.status and int(self.status) < 400
 
     def json(self):
-        return self.result
+        return self.content
 
     def object(self):
         return json.loads(self.content)
@@ -38,6 +38,7 @@ class from_response():
                 return None
             if not response.is_ok():
                 raise DQError(status=response.status, message=response.content)
+            #print response.json()
             obj = response.object()
             if isinstance(obj, list):
                 return [self.__to_object(item) for item in obj]

@@ -105,24 +105,37 @@ Create new deduplication job
 Available column functions:
 
 * addresses
-    * CALY_ADRES
     * KOD_POCZTOWY
     * MIEJSCOWOSC
     * ULICA_NUMER_DOMU_I_MIESZKANIA
-    * NUMER_DOMU_I_MIESZKANIA
+    * ULICA
     * NUMER_DOMU
     * NUMER_MIESZKANIA
+    * NUMER_DOMU_I_MIESZKANIA
+    * WOJEWODZTWO
+    * POWIAT
+    * GMINA
 * names
-    * NAZWA_OGOLNA
-    * NAZWA_PODMIOTU
-    * IMIE_I_NAZWISKO
     * IMIE
     * NAZWISKO
+    * NAZWA_PODMIOTU
+    * IMIE_I_NAZWISKO
 * people/companies
     * PESEL
     * NIP
     * REGON
-    * EMAIL
+* contact
+    * EMAIL1
+    * EMAIL2
+    * TELEFON1
+    * TELEFON2
+* dates
+    * DATA_URODZENIA
+    * CZAS_AKTUALIZACJI
+* mixed
+    * DANE_OGOLNE
+* id
+    * ID_REKORDU
 * others
     * PRZEPISZ
     * POMIN

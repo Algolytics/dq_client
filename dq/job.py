@@ -105,7 +105,10 @@ class JobConfig:
 			
     @staticmethod
     def __boolean_to_num(value):
-        return 1 if value else 0
+        if isinstance(value, bool):
+            return 1 if value else 0
+        else:
+            return value
 
     def data(self):
         return {
